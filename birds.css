@@ -1,0 +1,428 @@
+{}
+
+.description{
+    padding: 35px 50px;
+    width: 800px;
+    background-color: #759cf0;
+    border-radius: 20px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 19px;
+    color: aliceblue;
+    background-color: #759cf0;
+    padding: 15px;
+}
+.Page{
+    text-align: center;
+    color: #0C1844;
+    background-color: #f01e5c;
+    margin: auto;
+    padding-top: 5px;
+    font-size: 25px;
+    height: 40px;
+}
+.generalimg {
+    width: 200px; /* Set desired width */
+    height: 200px; /* Set desired height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    border-color: #0C1844;
+    border-width: 5px;
+    border-style: solid;
+}
+.header {
+    background-color: #0C1844;
+    color: #f01e5c;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+
+}
+.navlink {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0px 20px;
+    padding: 1px 10px;
+}
+.navlink:hover{
+    background-color: #759cf0;
+    color: aliceblue;
+}
+nav{
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #536493;
+}
+
+body{
+    background-color: #759cf0;
+    font-family: Poppins;
+    margin: 0;
+}
+.birdco1{
+    width: 25%;
+    border-radius: 50px;
+}
+
+.title{
+    text-align: center;
+    color: #f01e5c;
+    background-color: #0C1844;
+    margin: auto;
+    padding-top: 5px;
+    font-size: 25px;
+    height: 40px;
+}
+
+button { 
+    background: linear-gradient(to right, #f01e5c, #e5615c); 
+    border: solid; 
+    border-color: #f01e5c;
+    border-radius: 10px; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none;  
+    display: inline-block; 
+    font-size: 16px; 
+    transition: all 0.3s; 
+} 
+button:hover { 
+    background: linear-gradient(to right, #f01e5c, #e5615c);
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    position: relative; /* Needed for absolute positioning inside */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Adjust to control spacing from edges */
+    position: relative; /* Needed for absolute positioning inside */
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left h2 {
+    font-size: 24px; /* Adjust size as needed */
+    margin: 0;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right ul li {
+    margin: 5px 0;
+}
+
+.footer-right ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-right ul li a:hover {
+    color: #ff6969; /* Adjust hover color as needed */
+}
+
+.fine-text {
+    font-size: 12px; /* Fine text for copyright */
+    position: absolute;
+    bottom: 10px;
+    left: 20px; /* Adjust to control distance from left edge */
+    margin: 0;
+}
+
+.left, .right {
+    width: 100%; /* Ensure the content takes the full width of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items within the block */
+}
+
+.left h3, .right h3 {
+    width: 100%; /* Ensure heading takes full width */
+    text-align: center; /* Center the heading */
+    font-size: 25px;
+    background-color: rgba(12, 24, 68, 0.3);
+}
+
+.right{
+    text-align: right;
+    align-self: flex-end;
+}
+.left{
+    text-align: left;
+    align-self: flex-start;
+}
+.birds{}
+
+.description{
+    padding: 35px 50px;
+    width: 800px;
+    background-color: #607fc3;
+    border-radius: 20px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 19px;
+    color: aliceblue;
+    background-color: #759cf0;
+    padding: 15px;
+}
+.Page{
+    text-align: center;
+    color: #0C1844;
+    background-color: #f01e5c;
+    margin: auto;
+    padding-top: 5px;
+    font-size: 25px;
+    height: 40px;
+}
+.generalimg {
+    width: 200px; /* Set desired width */
+    height: 200px; /* Set desired height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    border-color: #0C1844;
+    border-width: 5px;
+    border-style: solid;
+}
+.birdimg {
+    flex: 0 0 auto;
+    width: 200px; /* Set desired width */
+    height: 200px; /* Set desired height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    border-color: #f01e5c;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.header {
+    background-color: #0C1844;
+    color: #f01e5c;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+
+}
+.navlink {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0px 20px;
+    padding: 1px 10px;
+}
+.navlink:hover{
+    background-color: #759cf0;
+    color: aliceblue;
+}
+nav{
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #536493;
+}
+
+body{
+    background-color: #759cf0;
+    font-family: Poppins;
+    margin: 0;
+}
+.birdco1{
+    width: 25%;
+    border-radius: 50px;
+}
+
+.title{
+    text-align: center;
+    color: #f01e5c;
+    background-color: #0C1844;
+    margin: auto;
+    padding-top: 5px;
+    font-size: 25px;
+    height: 40px;
+}
+
+button { 
+    background: linear-gradient(to right, #f01e5c, #e5615c); 
+    border: solid; 
+    border-color: #f01e5c;
+    border-radius: 10px; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none;  
+    display: inline-block; 
+    font-size: 16px; 
+    transition: all 0.3s; 
+} 
+button:hover { 
+    background: linear-gradient(to right, #f01e5c, #e5615c);
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    position: relative; /* Needed for absolute positioning inside */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Adjust to control spacing from edges */
+    position: relative; /* Needed for absolute positioning inside */
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left h2 {
+    font-size: 24px; /* Adjust size as needed */
+    margin: 0;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right ul li {
+    margin: 5px 0;
+}
+
+.footer-right ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-right ul li a:hover {
+    color: #ff6969; /* Adjust hover color as needed */
+}
+
+.fine-text {
+    font-size: 12px; /* Fine text for copyright */
+    position: absolute;
+    bottom: 10px;
+    left: 20px; /* Adjust to control distance from left edge */
+    margin: 0;
+}
+
+.container {
+    position: relative; /* Needed for the pseudo-element */
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+    justify-content: center;
+    color: aliceblue; 
+    width: 100%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    z-index: 1; /* Ensure the content is above the pseudo-element */
+    padding-bottom: 40px;
+}
+hr {
+    width: 100%; /* Full width */
+    border: none; /* Remove default border */
+    border-top: 5px solid #607fc3; /* Top border with desired color */
+    margin: 0;
+}
+
+.landpage .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/land.jpg'); /* Replace with your image path */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    opacity: 0.2; /* Adjust opacity */
+    z-index: -1; /* Ensure the pseudo-element is behind the container content */
+}
+
+.waterpage .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/water.webp'); /* Replace with your image path */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    opacity: 0.2; /* Adjust opacity */
+    z-index: -1; /* Ensure the pseudo-element is behind the container content */
+}
+
+.specialtypage .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/tropical.webp'); /* Replace with your image path */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    opacity: 0.2; /* Adjust opacity */
+    z-index: -1; /* Ensure the pseudo-element is behind the container content */
+}
+
+.birds{ padding: 35px 50px; 
+    background-color: #607fc3; 
+    border-radius: 20px; 
+    
+    width: 700px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Adjust gap as needed */
+    width: 70%;
+    margin: 0 auto; /* Center the content block */
+    text-align: center;
+}
+.content p {
+    flex: 1;
+    text-align: left;
+}

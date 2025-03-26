@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bird.co Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="quizpage">
+    <div class="header">
+        <img src="images/birdco1-removebg-preview.png" alt="birdco1" class="birdco1">
+        <a class="logo" href="#"></a>
+        <h2>Birds here, birds there, birds everywhere</h2>
+    </div>
+    <nav>
+        <a href="land.html" class="navlink">Land Birds</a>
+        <a href="water.html" class="navlink">Water Birds</a>
+        <a href="index.html" class="navlink">Home</a>
+        <a href="specialty.html" class="navlink">Specialty Birds</a>
+        <a href="quiz.html" class="navlink">Quiz</a>
+    </nav>
+    <h2 class="Page">Bird Quiz</h2>
+    <div class="quiz-container">
+        <form id="quizForm">
+            <div>
+                <label for="playerName">Enter your name:</label>
+                <input type="text" id="playerName" name="playerName" required>
+            </div>
+            <div class="question">
+                <p>1. Which bird is known for its large colorful bill?</p>
+                <input type="radio" name="q1" value="a"> Parrot<br>
+                <input type="radio" name="q1" value="b"> Toucan<br>
+                <input type="radio" name="q1" value="c"> Sparrow<br>
+                <input type="radio" name="q1" value="d"> Eagle
+            </div>
+            <div class="question">
+                <p>2. Which bird is flightless and native to New Zealand?</p>
+                <input type="radio" name="q2" value="a"> Emu<br>
+                <input type="radio" name="q2" value="b"> Kiwi<br>
+                <input type="radio" name="q2" value="c"> Ostrich<br>
+                <input type="radio" name="q2" value="d"> Penguin
+            </div>
+            <div class="question">
+                <p>3. What is the primary diet of the Bald Eagle?</p>
+                <input type="radio" name="q3" value="a"> Insects<br>
+                <input type="radio" name="q3" value="b"> Fish<br>
+                <input type="radio" name="q3" value="c"> Berries<br>
+                <input type="radio" name="q3" value="d"> Small Mammals
+            </div>
+            <div class="question">
+                <p>4. Which bird is famous for its iridescent tail feathers?</p>
+                <input type="radio" name="q4" value="a"> Peacock<br>
+                <input type="radio" name="q4" value="b"> Flamingo<br>
+                <input type="radio" name="q4" value="c"> Robin<br>
+                <input type="radio" name="q4" value="d"> Hawk
+            </div>
+            <div class="question">
+                <p>5. Which bird is known for its ability to hover in mid-air?</p>
+                <input type="radio" name="q5" value="a"> Albatross<br>
+                <input type="radio" name="q5" value="b"> Hummingbird<br>
+                <input type="radio" name="q5" value="c"> Swan<br>
+                <input type="radio" name="q5" value="d"> Pigeon
+            </div>
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+        <div id="results" class="results"></div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>Bird.co</h2>
+                <p class="fine-text">&copy; 2024 Bird.co. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="land.html">Land Birds</a></li>
+                    <li><a href="water.html">Water Birds</a></li>
+                    <li><a href="specialty.html">Specialty Birds</a></li>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="quiz.html">Quiz Page</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function checkAnswers() {
+            const playerName = document.getElementById('playerName').value;
+            const correctAnswers = ['b', 'b', 'b', 'a', 'b'];
+            const form = document.getElementById('quizForm');
+            let score = 0;
+            let index = 0;
+            const quizQuestions = form.querySelectorAll('.question');
+            quizQuestions.forEach((question) => {
+                const userAnswer = question.querySelector('input[type="radio"]:checked');
+                if (userAnswer && userAnswer.value === correctAnswers[index]) {
+                    score++;
+                }
+                index++;
+            });
+            document.getElementById('results').innerText = `${playerName} scored ${score} out of ${correctAnswers.length}.`;
+        }
+    </script>
+</body>
+</html>
